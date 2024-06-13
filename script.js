@@ -60,10 +60,10 @@ const botaoCategoria = document.querySelectorAll('.superior__item')
 botaoCategoria.forEach(botao => {
   //console.log(botao.getAttribute('name'));
   let nomeDoBotao = botao.getAttribute('name')
-  botao.addEventListener('click', () => selcionarPorClick(nomeDoBotao))
+  botao.addEventListener('click', () => selecionarPorClick(nomeDoBotao))
 })
 
-function selcionarPorClick(filtro) {
+function selecionarPorClick(filtro) {
   console.log(filtro);
   const videos = document.querySelectorAll('.videos__item')
   for(let video of videos) {
